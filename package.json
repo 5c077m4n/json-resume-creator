@@ -1,6 +1,7 @@
 {
 	"name": "json-resume-creator",
 	"version": "0.0.1",
+	"private": true,
 	"description": "",
 	"keywords": [],
 	"homepage": "https://github.com/5c077m4n/json-resume-creator#readme",
