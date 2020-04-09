@@ -10,7 +10,9 @@
 		"require": "./dist/src.cjs/index.js"
 	},
 	"main": "./dist/src.cjs/index.js",
-	"bin": "node ./dist/src.cjs/index.js",
+	"bin": {
+		"resume-creator": "./dist/src.cjs/index.js"
+	},
 	"scripts": {
 		"clean": "rimraf ./dist/",
 		"test": "jest"
