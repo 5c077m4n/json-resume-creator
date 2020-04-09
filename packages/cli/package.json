@@ -1,0 +1,23 @@
+{
+	"name": "cli",
+	"version": "0.0.1",
+	"description": "",
+	"keywords": [],
+	"license": "ISC",
+	"author": "",
+	"exports": {
+		"import": "./dist/src.esm/index.js",
+		"require": "./dist/src.cjs/index.js"
+	},
+	"main": "./dist/src.cjs/index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"devDependencies": {
+		"fs-extra": "^9.0.0",
+		"jest": "^25.3.0",
+		"mkdirp": "^1.0.4",
+		"rimraf": "^3.0.2",
+		"typescript": "^3.8.3"
+	}
+}
