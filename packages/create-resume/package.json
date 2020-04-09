@@ -1,0 +1,38 @@
+{
+	"name": "@json-resume-creator/create-resume",
+	"version": "0.0.1",
+	"description": "",
+	"keywords": [],
+	"license": "MIT",
+	"author": "Roee Shapira",
+	"exports": {
+		"import": "./dist/src.esm/index.js",
+		"require": "./dist/src.cjs/index.js"
+	},
+	"main": "./dist/src.cjs/index.js",
+	"bin": "node ./dist/src.cjs/index.js",
+	"scripts": {
+		"clean": "rimraf ./dist/",
+		"test": "jest"
+	},
+	"dependencies": {
+		"@types/node": "^13.11.1",
+		"commander": "^5.0.0",
+		"node-fetch": "^2.6.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^4.0.0",
+		"@types/commander": "^2.12.2",
+		"@types/fs-extra": "^8.1.0",
+		"@types/mkdirp": "^1.0.0",
+		"@types/node-fetch": "^2.5.5",
+		"@types/rimraf": "^3.0.0",
+		"fs-extra": "^9.0.0",
+		"jest": "^25.3.0",
+		"mkdirp": "^1.0.4",
+		"rimraf": "^3.0.2",
+		"rollup": "^2.3.4",
+		"rollup-plugin-terser": "^5.3.0",
+		"typescript": "^3.8.3"
+	}
+}
