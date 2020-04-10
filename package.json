@@ -14,11 +14,6 @@
 	},
 	"license": "MIT",
 	"author": "Roee Shapira",
-	"type": "module",
-	"exports": {
-		"import": "./src.esm/index.js",
-		"require": "./src.cjs/index.js"
-	},
 	"scripts": {
 		"build": "lerna run build --parallel",
 		"clean": "lerna run clean",
