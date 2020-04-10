@@ -19,7 +19,7 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"@json-resume-creator/core": "^null-alpha.19+0bb47cf",
+		"@json-resume-creator/core": "*",
 		"@types/node": "^13.11.1",
 		"commander": "^5.0.0",
 		"node-fetch": "^2.6.0"
