@@ -6,11 +6,11 @@
 	"license": "MIT",
 	"author": "Roee Shapira",
 	"exports": {
-		"import": "./dist/src.esm/index.js",
-		"require": "./dist/src.cjs/index.js"
+		"require": "./dist/index.js"
 	},
-	"main": "./dist/src.cjs/index.js",
+	"main": "./dist/index.js",
 	"scripts": {
+		"build": "tsc ./src/index.ts",
 		"clean": "rimraf ./dist/",
 		"test": "jest"
 	},
