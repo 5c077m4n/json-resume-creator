@@ -1,4 +1,5 @@
 import { program } from 'commander';
+import {} from '@json-resume-creator/core';
 
 export async function createResume(): Promise<void> {
 	program
