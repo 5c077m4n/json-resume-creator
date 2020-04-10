@@ -4,6 +4,8 @@ import fetch from 'node-fetch';
 import { run } from './run-command';
 import { Resume } from '../interfaces/resume';
 
+export { getPagePdf } from './get-pdf';
+
 const pkgNameRegex = /^@json-resume-creator\/theme-[\w-]+$/;
 
 export async function writeExampleResume(toPath = './resume.json'): Promise<void> {
