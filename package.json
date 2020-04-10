@@ -23,8 +23,9 @@
 		"build": "lerna run build --parallel",
 		"clean": "lerna run clean",
 		"postinstall": "lerna bootstrap",
-		"publish:all": "lerna publish --canary patch",
-		"test": "lerna run test --stream"
+		"publish:all": "lerna publish",
+		"test": "lerna run test --stream",
+		"version:patch": "lerna version patch --yes"
 	},
 	"husky": {
 		"hooks": {

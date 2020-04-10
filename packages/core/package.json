@@ -1,6 +1,6 @@
 {
 	"name": "@json-resume-creator/core",
-	"version": "0.0.1",
+	"version": "null-alpha.19+0bb47cf",
 	"description": "",
 	"keywords": [],
 	"license": "MIT",
@@ -12,6 +12,7 @@
 	"scripts": {
 		"build": "tsc -p ./tsconfig.json",
 		"clean": "rimraf ./dist/",
+		"prepare": "npm-run-all -s build",
 		"test": "jest"
 	},
 	"dependencies": {
@@ -31,5 +32,9 @@
 		"puppeteer": "^2.1.1",
 		"rimraf": "^3.0.2",
 		"typescript": "^3.8.3"
-	}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"gitHead": "0bb47cf6369815a1168f7d3a848ad9418e1b7a9a"
 }
