@@ -1,4 +1,4 @@
-declare interface Resume {
+export declare interface Resume {
 	basics: {
 		name: string;
 		label: string;

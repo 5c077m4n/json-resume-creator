@@ -2,6 +2,7 @@ import { readJSON, writeJSON, ensureFile } from 'fs-extra';
 import fetch from 'node-fetch';
 
 import { validateJsonResume } from './validate-json-resume';
+import type { Resume } from '../../index.d';
 
 export async function writeExampleResume(toPath = './resume.json'): Promise<void> {
 	await ensureFile(toPath);
