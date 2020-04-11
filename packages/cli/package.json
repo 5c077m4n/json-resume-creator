@@ -1,6 +1,6 @@
 {
 	"name": "@json-resume-creator/cli",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "",
 	"keywords": [],
 	"license": "MIT",
@@ -19,7 +19,7 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"@json-resume-creator/core": "^0.0.1",
+		"@json-resume-creator/core": "^0.0.2",
 		"@types/node": "^13.11.1",
 		"commander": "^5.0.0",
 		"node-fetch": "^2.6.0"
