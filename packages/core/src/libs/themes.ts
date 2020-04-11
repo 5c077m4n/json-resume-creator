@@ -1,5 +1,5 @@
 import { run } from './run-command';
-import { Resume } from '../interfaces/resume';
+import type { Resume } from '../interfaces/resume.d';
 
 const pkgNameRegex = /^@json-resume-creator\/theme-[\w-]+$/;
 
