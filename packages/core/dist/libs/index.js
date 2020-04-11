@@ -1,5 +1,5 @@
 'use strict';
-exports.__esModule = true;
+Object.defineProperty(exports, '__esModule', { value: true });
 var json_resume_1 = require('./json-resume');
 exports.getRemoteJsonResume = json_resume_1.getRemoteJsonResume;
 exports.writeExampleResume = json_resume_1.writeExampleResume;

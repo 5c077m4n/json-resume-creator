@@ -139,16 +139,19 @@ var __importStar =
 		result['default'] = mod;
 		return result;
 	};
-exports.__esModule = true;
+Object.defineProperty(exports, '__esModule', { value: true });
 var run_command_1 = require('./run-command');
 var pkgNameRegex = /^@json-resume-creator\/theme-[\w-]+$/;
-function addTheme(pkgName) {
+function addTheme(pkgName, global) {
+	if (global === void 0) {
+		global = false;
+	}
 	return __awaiter(this, void 0, void 0, function () {
 		return __generator(this, function (_a) {
 			switch (_a.label) {
 				case 0:
 					if (!pkgNameRegex.test(pkgName)) throw Error('Invalid theme package name.');
-					return [4 /*yield*/, run_command_1.run('npm install --save ' + pkgName)];
+					return [4 /*yield*/, run_command_1.run('npm install ' + pkgName + (global ? ' -g' : ''))];
 				case 1:
 					_a.sent();
 					return [2 /*return*/];
@@ -172,7 +175,10 @@ function applyTheme(pkgName, json) {
 					];
 				case 1:
 					themePkg = _a.sent();
-					return [2 /*return*/, themePkg(json)];
+					return [4 /*yield*/, run_command_1.run(themePkg + ' build', { JSON_RESUME: JSON.stringify(json) })];
+				case 2:
+					_a.sent();
+					return [2 /*return*/];
 			}
 		});
 	});

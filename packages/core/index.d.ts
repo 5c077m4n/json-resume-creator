@@ -1,4 +1,4 @@
-export interface Resume {
+declare interface Resume {
 	basics: {
 		name: string;
 		label: string;
@@ -30,7 +30,7 @@ export interface Resume {
 			startDate: string;
 			endDate: string;
 			summary: string;
-			highlights: [string];
+			highlights: string[];
 		},
 	];
 	volunteer: [

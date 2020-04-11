@@ -17,6 +17,7 @@
 	},
 	"dependencies": {
 		"@types/node": "^13.11.1",
+		"jsonschema": "^1.2.6",
 		"node-fetch": "^2.6.0"
 	},
 	"devDependencies": {

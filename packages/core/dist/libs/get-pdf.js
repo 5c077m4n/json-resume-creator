@@ -130,7 +130,7 @@ var __generator =
 			return { value: op[0] ? op[1] : void 0, done: true };
 		}
 	};
-exports.__esModule = true;
+Object.defineProperty(exports, '__esModule', { value: true });
 var puppeteer_1 = require('puppeteer');
 var fs_extra_1 = require('fs-extra');
 function getPagePdf(filePath) {

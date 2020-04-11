@@ -135,7 +135,7 @@ var __importDefault =
 	function (mod) {
 		return mod && mod.__esModule ? mod : { default: mod };
 	};
-exports.__esModule = true;
+Object.defineProperty(exports, '__esModule', { value: true });
 var fs_extra_1 = require('fs-extra');
 var node_fetch_1 = __importDefault(require('node-fetch'));
 var validate_json_resume_1 = require('./validate-json-resume');
@@ -170,7 +170,7 @@ function getRemoteJsonResume(url) {
 			switch (_a.label) {
 				case 0:
 					if (typeof url !== 'string' || !url.endsWith('.json')) throw Error('The given URL is invalid.');
-					return [4 /*yield*/, node_fetch_1['default'](url)];
+					return [4 /*yield*/, node_fetch_1.default(url)];
 				case 1:
 					response = _a.sent();
 					if (!response.ok) throw Error('There was an error in getting the requested json.');

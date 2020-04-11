@@ -130,11 +130,16 @@ var __generator =
 			return { value: op[0] ? op[1] : void 0, done: true };
 		}
 	};
-exports.__esModule = true;
+Object.defineProperty(exports, '__esModule', { value: true });
+var jsonschema_1 = require('jsonschema');
+var resume_schema_1 = require('../schemas/resume.schema');
+var resumeValidator = new jsonschema_1.Validator();
 function validateJsonResume(json) {
 	return __awaiter(this, void 0, void 0, function () {
+		var res;
 		return __generator(this, function (_a) {
-			return [2 /*return*/, !!json];
+			res = resumeValidator.validate(json, resume_schema_1.resumeSchema);
+			return [2 /*return*/, res.valid];
 		});
 	});
 }
