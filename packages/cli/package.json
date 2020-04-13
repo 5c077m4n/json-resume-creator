@@ -12,6 +12,9 @@
 	"bin": {
 		"resume-creator": "./dist/index.js"
 	},
+	"files": [
+		"dist/**/*"
+	],
 	"scripts": {
 		"build": "tsc -p ./tsconfig.json",
 		"clean": "rimraf ./dist/",
