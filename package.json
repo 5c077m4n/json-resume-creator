@@ -16,10 +16,10 @@
 	"author": "Roee Shapira",
 	"scripts": {
 		"build": "lerna run build --parallel",
-		"clean": "lerna run clean",
+		"clean": "lerna run clean --stream",
 		"postinstall": "lerna bootstrap",
 		"publish:all": "lerna publish",
-		"test": "lerna run test --stream",
+		"test": "lerna run test --parallel",
 		"version:patch": "lerna version patch --yes"
 	},
 	"husky": {

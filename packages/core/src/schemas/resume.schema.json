@@ -5,49 +5,24 @@
             "additionalProperties": false,
             "properties": {
                 "awards": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "awarder": {
-                                        "type": "string"
-                                    },
-                                    "date": {
-                                        "type": "string"
-                                    },
-                                    "summary": {
-                                        "type": "string"
-                                    },
-                                    "title": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "awarder": {
-                                    "type": "string"
-                                },
-                                "date": {
-                                    "type": "string"
-                                },
-                                "summary": {
-                                    "type": "string"
-                                },
-                                "title": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "awarder": {
+                                "type": "string"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "date": {
+                                "type": "string"
+                            },
+                            "summary": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "basics": {
@@ -90,43 +65,21 @@
                             "type": "string"
                         },
                         "profiles": {
-                            "additionalItems": {
-                                "anyOf": [
-                                    {
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "network": {
-                                                "type": "string"
-                                            },
-                                            "url": {
-                                                "type": "string"
-                                            },
-                                            "username": {
-                                                "type": "string"
-                                            }
-                                        },
-                                        "type": "object"
-                                    }
-                                ]
-                            },
-                            "items": [
-                                {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "network": {
-                                            "type": "string"
-                                        },
-                                        "url": {
-                                            "type": "string"
-                                        },
-                                        "username": {
-                                            "type": "string"
-                                        }
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "network": {
+                                        "type": "string"
                                     },
-                                    "type": "object"
-                                }
-                            ],
-                            "minItems": 1,
+                                    "url": {
+                                        "type": "string"
+                                    },
+                                    "username": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
                             "type": "array"
                         },
                         "summary": {
@@ -139,419 +92,195 @@
                     "type": "object"
                 },
                 "education": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "area": {
-                                        "type": "string"
-                                    },
-                                    "courses": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "endDate": {
-                                        "type": "string"
-                                    },
-                                    "gpa": {
-                                        "type": "string"
-                                    },
-                                    "institution": {
-                                        "type": "string"
-                                    },
-                                    "startDate": {
-                                        "type": "string"
-                                    },
-                                    "studyType": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "area": {
-                                    "type": "string"
-                                },
-                                "courses": {
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "type": "array"
-                                },
-                                "endDate": {
-                                    "type": "string"
-                                },
-                                "gpa": {
-                                    "type": "string"
-                                },
-                                "institution": {
-                                    "type": "string"
-                                },
-                                "startDate": {
-                                    "type": "string"
-                                },
-                                "studyType": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "area": {
+                                "type": "string"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "courses": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            "endDate": {
+                                "type": "string"
+                            },
+                            "gpa": {
+                                "type": "string"
+                            },
+                            "institution": {
+                                "type": "string"
+                            },
+                            "startDate": {
+                                "type": "string"
+                            },
+                            "studyType": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "interests": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "keywords": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "name": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "keywords": {
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "type": "array"
-                                },
-                                "name": {
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "keywords": {
+                                "items": {
                                     "type": "string"
-                                }
+                                },
+                                "type": "array"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "languages": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "fluency": {
-                                        "type": "string"
-                                    },
-                                    "language": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "fluency": {
-                                    "type": "string"
-                                },
-                                "language": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "fluency": {
+                                "type": "string"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "language": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "publications": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "name": {
-                                        "type": "string"
-                                    },
-                                    "publisher": {
-                                        "type": "string"
-                                    },
-                                    "releaseDate": {
-                                        "type": "string"
-                                    },
-                                    "summary": {
-                                        "type": "string"
-                                    },
-                                    "website": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "name": {
-                                    "type": "string"
-                                },
-                                "publisher": {
-                                    "type": "string"
-                                },
-                                "releaseDate": {
-                                    "type": "string"
-                                },
-                                "summary": {
-                                    "type": "string"
-                                },
-                                "website": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "name": {
+                                "type": "string"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "publisher": {
+                                "type": "string"
+                            },
+                            "releaseDate": {
+                                "type": "string"
+                            },
+                            "summary": {
+                                "type": "string"
+                            },
+                            "website": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "references": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "name": {
-                                        "type": "string"
-                                    },
-                                    "reference": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "name": {
-                                    "type": "string"
-                                },
-                                "reference": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "name": {
+                                "type": "string"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "reference": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "skills": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "keywords": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "level": {
-                                        "type": "string"
-                                    },
-                                    "name": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "keywords": {
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "type": "array"
-                                },
-                                "level": {
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "keywords": {
+                                "items": {
                                     "type": "string"
                                 },
-                                "name": {
-                                    "type": "string"
-                                }
+                                "type": "array"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "level": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "volunteer": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "endDate": {
-                                        "type": "string"
-                                    },
-                                    "highlights": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "organization": {
-                                        "type": "string"
-                                    },
-                                    "position": {
-                                        "type": "string"
-                                    },
-                                    "startDate": {
-                                        "type": "string"
-                                    },
-                                    "summary": {
-                                        "type": "string"
-                                    },
-                                    "website": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "endDate": {
-                                    "type": "string"
-                                },
-                                "highlights": {
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "type": "array"
-                                },
-                                "organization": {
-                                    "type": "string"
-                                },
-                                "position": {
-                                    "type": "string"
-                                },
-                                "startDate": {
-                                    "type": "string"
-                                },
-                                "summary": {
-                                    "type": "string"
-                                },
-                                "website": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "endDate": {
+                                "type": "string"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "highlights": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            "organization": {
+                                "type": "string"
+                            },
+                            "position": {
+                                "type": "string"
+                            },
+                            "startDate": {
+                                "type": "string"
+                            },
+                            "summary": {
+                                "type": "string"
+                            },
+                            "website": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 },
                 "work": {
-                    "additionalItems": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "company": {
-                                        "type": "string"
-                                    },
-                                    "endDate": {
-                                        "type": "string"
-                                    },
-                                    "highlights": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "position": {
-                                        "type": "string"
-                                    },
-                                    "startDate": {
-                                        "type": "string"
-                                    },
-                                    "summary": {
-                                        "type": "string"
-                                    },
-                                    "website": {
-                                        "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        ]
-                    },
-                    "items": [
-                        {
-                            "additionalProperties": false,
-                            "properties": {
-                                "company": {
-                                    "type": "string"
-                                },
-                                "endDate": {
-                                    "type": "string"
-                                },
-                                "highlights": {
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "type": "array"
-                                },
-                                "position": {
-                                    "type": "string"
-                                },
-                                "startDate": {
-                                    "type": "string"
-                                },
-                                "summary": {
-                                    "type": "string"
-                                },
-                                "website": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "company": {
+                                "type": "string"
                             },
-                            "type": "object"
-                        }
-                    ],
-                    "minItems": 1,
+                            "endDate": {
+                                "type": "string"
+                            },
+                            "highlights": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            "position": {
+                                "type": "string"
+                            },
+                            "startDate": {
+                                "type": "string"
+                            },
+                            "summary": {
+                                "type": "string"
+                            },
+                            "website": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
                     "type": "array"
                 }
             },
