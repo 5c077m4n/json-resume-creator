@@ -3,6 +3,7 @@ import type { Schema } from 'jsonschema';
 export const resumeSchema: Schema = {
 	id: '/JsonResume',
 	type: 'object',
+	additionalItems: false,
 	properties: {
 		basics: {
 			type: 'object',

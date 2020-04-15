@@ -16,9 +16,9 @@
 		"dist/**/*"
 	],
 	"scripts": {
-		"build": "tsc -p ./tsconfig.json",
+		"build": "tsc -p ../tsconfig.json",
 		"clean": "rimraf ./dist/",
-		"prepare": "npm-run-all -s clean build",
+		"prepare": "run-s clean build",
 		"test": "jest"
 	},
 	"dependencies": {

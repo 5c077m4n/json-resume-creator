@@ -13,13 +13,12 @@
 		"dist/**/*"
 	],
 	"scripts": {
-		"build": "tsc -p ./tsconfig.json",
+		"build": "tsc -p ../tsconfig.json",
 		"clean": "rimraf ./dist/",
-		"prepare": "npm-run-all -s clean build",
+		"prepare": "run-s clean build",
 		"test": "jest"
 	},
 	"dependencies": {
-		"@types/node": "^13.11.1",
 		"jsonschema": "^1.2.6",
 		"node-fetch": "^2.6.0"
 	},
@@ -27,6 +26,7 @@
 		"@types/fs-extra": "^8.1.0",
 		"@types/jest": "^25.2.1",
 		"@types/mkdirp": "^1.0.0",
+		"@types/node": "^13.11.1",
 		"@types/node-fetch": "^2.5.5",
 		"@types/puppeteer": "^2.0.1",
 		"@types/rimraf": "^3.0.0",
