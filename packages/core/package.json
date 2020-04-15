@@ -13,8 +13,9 @@
 		"dist/**/*"
 	],
 	"scripts": {
-		"build": "tsc -p ../tsconfig.json",
+		"build": "tsc -p ./tsconfig.json",
 		"clean": "rimraf ./dist/",
+		"create-resume-schema": "npx typescript-json-schema './src/interfaces/resume.ts' '*' --out ./src/schemas/resume.schema.json --excludePrivate --noExtraProps",
 		"prepare": "run-s clean build",
 		"test": "jest"
 	},

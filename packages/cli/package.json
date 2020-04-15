@@ -16,7 +16,7 @@
 		"dist/**/*"
 	],
 	"scripts": {
-		"build": "tsc -p ../tsconfig.json",
+		"build": "tsc -p ./tsconfig.json",
 		"clean": "rimraf ./dist/",
 		"prepare": "run-s clean build",
 		"test": "jest"

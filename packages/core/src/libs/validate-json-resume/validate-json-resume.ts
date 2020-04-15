@@ -1,6 +1,6 @@
 import { Validator } from 'jsonschema';
 
-import { resumeSchema } from '../../schemas/resume.schema';
+import resumeSchema from '../../schemas/resume.schema.json';
 
 const resumeValidator = new Validator();
 export async function validateJsonResume(json: unknown): Promise<boolean> {
