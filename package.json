@@ -30,7 +30,7 @@
 	},
 	"lint-staged": {
 		"**/package.json": "sort-package-json",
-		"*.{ts,tsx,js,jsx,css,scss,md}": "prettier --write",
+		"*.{json,ts,tsx,js,jsx,css,scss,md}": "prettier --write",
 		"*.{tsx,ts,js,jsx}": "eslint --cache --fix"
 	},
 	"dependencies": {},
