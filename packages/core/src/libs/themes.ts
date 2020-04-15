@@ -11,5 +11,5 @@ export async function addTheme(pkgName: string): Promise<void> {
 export async function applyTheme(pkgName: string, json: Resume): Promise<void> {
 	if (!pkgNameRegex.test(pkgName)) throw Error('Invalid theme package name.');
 	const themePkg = await import(pkgName);
-	await run(`${themePkg} build`, { JSON_RESUME: JSON.stringify(json) });
+	await run(`${themePkg} build:prod`, { JSON_RESUME: JSON.stringify(json) });
 }
