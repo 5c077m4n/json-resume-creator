@@ -1,4 +1,5 @@
 import { validateJsonResume } from './validate-json-resume';
+import { Resume } from '../../interfaces/resume';
 
 describe('Validate Json Resume', () => {
 	test('Sanity - import', async () => {
@@ -28,7 +29,7 @@ describe('Validate Json Resume', () => {
 	});
 
 	test('The schame should be invalid - added field', async () => {
-		const json = await import('../../../assets/resume.json');
+		const json: Resume = await import('../../../assets/resume.json');
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		(json as any).invalidField = true;
 		const isValid = await validateJsonResume(json);
