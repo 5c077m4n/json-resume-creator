@@ -17,7 +17,9 @@
 	],
 	"scripts": {
 		"build": "tsc -p ./tsconfig.json",
-		"clean": "rimraf ./dist/",
+		"clean": "run-p clean:*",
+		"clean:dist": "rimraf ./dist/",
+		"clean:jest": "jest --clear-cache",
 		"prepare": "run-s clean build",
 		"test": "jest"
 	},
