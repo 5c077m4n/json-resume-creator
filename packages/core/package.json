@@ -1,6 +1,6 @@
 {
 	"name": "@json-resume-creator/core",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "",
 	"keywords": [],
 	"license": "MIT",
@@ -18,7 +18,7 @@
 		"clean:dist": "rimraf ./dist/",
 		"clean:jest": "jest --clear-cache",
 		"create-resume-schema": "npx typescript-json-schema './src/interfaces/resume.ts' '*' --out ./src/schemas/resume.schema.json --excludePrivate --noExtraProps",
-		"prepare": "run-s clean build",
+		"prepare": "run-s clean build test",
 		"test": "jest"
 	},
 	"dependencies": {
